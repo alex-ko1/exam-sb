@@ -26,8 +26,9 @@
                 margin-top: 7px;
                 background-color: #6E9BCA;
                 margin-left: 33px;
-                height: 30px;
+                height: fit-content;
                 padding-right: 6px;
+                border-radius: 3px;
                 span{
                     margin-top: 0;
                     a{
@@ -37,6 +38,29 @@
                         padding: 4px 0 5px 9px;
                         margin: 0px;
                         color: #fff;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        @media (max-width:1240px) {
+            .view-content{
+                padding: 0 10px;
+                .views-field.views-field-view-node{
+                    margin-left: 0;
+                }
+            }
+        }
+        @media (max-width:720px) {
+            .view-content{
+                .views-row{
+                    display: flex;
+                    flex-direction: column;
+                    gap:0;
+                    text-align: center;
+                    .views-field.views-field-view-node{
+                        width: max-content;
+                        margin: 0 auto;
                     }
                 }
             }

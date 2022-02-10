@@ -30,6 +30,8 @@
                 border-bottom: 1px solid #373645;
                 padding-bottom: 12px;
                 background-color: #fff;
+                width: fit-content !important;
+                margin-left: 20px;
             }
             .col-1{
                 .views-field.views-field-field-projects-link{
@@ -53,6 +55,7 @@
                 }
             }
             .col-4{
+                margin-right: 0;
                 .views-field.views-field-field-projects-link{
                     a{
                         color: #32ADE1;
@@ -82,9 +85,22 @@
                     }
                 }
             }
+            @media (max-width:1260px) {
+                .views-col{
+                    width: 22% !important;
+                    border-bottom: none;
+                    background-color: transparent;
+                    .views-field.views-field-title{
+                        a{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
             @media (max-width:950px) {
                 .views-col{
-                    width: 48% !important;
+                    display: block;
+                    width: 46% !important;
                     margin-bottom: 20px;
                     border-bottom: none;
                     background-color: transparent;
@@ -93,6 +109,7 @@
             @media (max-width:520px) {
                 .views-col{
                     width: 98% !important;
+                    margin-left: 0;
                 }
             }
         }

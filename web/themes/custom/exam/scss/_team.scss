@@ -97,6 +97,16 @@
                     width: 48% !important;
                     margin-bottom: 20px;
                 }
+                .views-field-addtoany-share{
+                    padding-left: 115px;
+                }
+                .views-field-link-flag{
+                    .flag.flag-like{
+                        a{
+                            padding-left: 30px;
+                        }
+                    }
+                }
             }
             @media (max-width:520px) {
                 .views-col{

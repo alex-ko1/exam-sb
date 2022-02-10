@@ -40,6 +40,9 @@
                         margin: 0;
                         input{
                             width: 340px;
+                            @media (max-width:915px) {
+                                width: 40vw;
+                            }
                         }
                     }
                 }
@@ -73,12 +76,18 @@
                                 border-right: 1px solid #ccc;
                                 padding-right: 12px;
                             }
+                            @media (max-width:568px) {
+                                display: none;
+                            }
                         }
                         &>div:nth-child(2){
+                            @media (max-width:1150px) {
+                                font-size: 0.8rem;
+                            }
                             &>div:first-child{
                                 display: flex;
                                 gap: 10px;
-                                font-size: 0.75rem;
+                                font-size: 0.75em;
                                 margin-left: 19px;
                                 .field--name-field-news-writer{
                                     color:#ccc;
@@ -99,26 +108,39 @@
                                     color: #ccc;
 
                                 }
+                                @media (max-width:867px) {
+                                    display: block;
+                                    .field--name-field-news-worker-name{
+                                        float: left;
+                                        max-width: fit-content;
+                                    }
+                                }
                             }
                             &>.field--name-field-news-title{
-                                font-size: 26px;
+                                font-size: 1.625em;
                                 margin: 10px 0 0;
                                 border-left: 1px solid #ccc;
                                 padding-left: 19px;
+                                @media (max-width:998px) {
+                                    border-left: none;
+                                }
                             }
                             &>.field--name-body.field--type-text-with-summary{
-                                font-size: 0.75rem;
+                                font-size: 0.75em;
                                 line-height: 14px;
                                 p{
                                     padding: 10px 25px 0 19px;
                                     margin-bottom: 0;
                                     border-left: 1px solid #ccc;
                                     padding-left: 19px;
+                                    @media (max-width:998px) {
+                                        border-left: none;
+                                    }
                                 }
                             }
                             &>.node__links{
                                 text-align: right;
-                                font-size: 15px;
+                                font-size: 0.9375em;
                                 padding-right: 34px;
                                 margin: 17px 0;
                                 li{
@@ -131,6 +153,28 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        @media (max-width:1320px) {
+            form>.form--inline.clearfix{
+                justify-content: center;
+            }
+            .view-content .views-row{
+                flex-direction: column;
+                .views-col{
+                    margin: 0 25vw;
+                }
+            }
+        }
+        @media (max-width:1150px) {
+            .view-content .views-row{
+                .views-col{
+                    width: 60% !important;
+                    margin: 0 20vw;
+                    .field--name-field-news-worker-name{
+                        max-width: min-content;
                     }
                 }
             }
